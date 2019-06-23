@@ -1,0 +1,48 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+header {
+    background: blue;
+    height: 50px;
+}
+
+footer {
+    background: green;
+    height: 50px;
+}
+
+div#container {
+    display: flex;
+    flex: 1;
+}
+
+.navigation {
+    background: orange;
+    flex: 1;
+    order: 1;
+}
+
+main {
+    flex: 2;
+    order: 2;
+    background: #fff;
+}
+
+#related_links {
+    background: purple;
+    order: 3;
+    flex: 1;
+}
+
+@media screen and (max-width: 550px) {
+    div#container {
+        display: grid;
+    }
+}
